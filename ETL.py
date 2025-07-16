@@ -14,7 +14,7 @@ print("Before dropna:", df.shape)
 
 
 # Step 3: Connect to PostgreSQL
-engine = create_engine('postgresql://postgres:Mahesh1234@localhost:5432/testdb')
+engine = create_engine('postgresql://youruusername:yourpassword@localhost:5432/testdb')
 
 # Step 4: Load to PostgreSQL
 df.to_sql("cars", engine, if_exists="replace", index=False)
